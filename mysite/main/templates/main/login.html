@@ -1,0 +1,17 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+<form method="POST">
+ 
+  {% csrf_token %}
+  {{form.as_p}}
+  <button class="btn btn-outline-info" style="background-color:green" type="submit">Login</button>
+
+</form>
+
+
+
+If you don't already have an account.Then go the <a href="/register" target="blank"><strong>register</strong></a> page.
+
+
+{% endblock %}
